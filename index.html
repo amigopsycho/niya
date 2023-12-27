@@ -67,7 +67,7 @@
     "farewells": ["Goodbye!", "Farewell!", "See you later!", "Take care!", "Until next time!", "Adios!", "Bye bye!", "Cheerio!", "So long!", "Ciao!", "Peace out!", "Catch you on the flip side!"],
     "questions": ["How are you?", "What is your name?", "Can you help me?", "What's the weather like?", "Tell me a joke.", "Who created you?", "Where are you from?", "What is the meaning of life?", "What's the latest news?", "What's your favorite color?", "Do you like pizza?", "How old are you?", "What's the time now?", "What's your favorite book?", "What's the capital of France?", "What's the largest mammal?", "What's the speed of light?", "What's the meaning of quantum entanglement?", "What's the square root of 144?", "Tell me a fun fact."],
     "responses": ["I'm doing well, thank you!", "My name is ChatBot.", "Of course, I'm here to help!", "The weather is sunny today.", "Why did the chicken cross the road? To get to the other side!", "I was created by OpenAI.", "I exist in the digital realm.", "The meaning of life is subjective and varies for each individual.", "I'm not programmed to provide real-time news, but you can check reputable news sources.", "I don't have a favorite color, but I can appreciate them all.", "I'm not capable of tasting, but many people enjoy pizza!", "I don't have an age, as I'm a computer program.", "I'm sorry, I don't have the capability to tell the time.", "I don't have a favorite book, but I can recommend many based on your interests.", "The capital of France is Paris.", "The blue whale is the largest mammal.", "The speed of light is approximately 299,792 kilometers per second.", "Quantum entanglement is a phenomenon where particles become connected and share properties, regardless of the distance between them.", "The square root of 144 is 12.", "Fun fact: Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible."],
-    "jokes": ["Why don't scientists trust atoms? Because they make up everything!", "What do you call fake spaghetti? An impasta!", "How does a penguin build its house? Igloos it together!"]
+    "jokes": ["Why don't scientists trust atoms? Because they make up everything!", "What do you call fake spaghetti? An impasta!", "How does a penguin build its house? Igloos it together!"],
     "fallback": ["I didn't understand that.", "Could you please rephrase?", "I'm sorry, I don't have information on that.", "I'm still learning, and your input helps me improve.", "I'm a bit confused. Mind providing more context?", "I may not have the answer you're looking for, but I'll do my best to assist you.", "It seems like there's a communication gap. Can you clarify your question?", "I'm here to chat and assist. What else would you like to talk about?"]
   };
 
@@ -89,7 +89,7 @@
   function processUserMessage(message) {
     let response = "Niya: I'm not sure how to respond to that.";
     
-    // Check if the user's message matches any predefined questions or jokes
+    // Check if the user's message matches any predefined questions, jokes, or fallback responses
     for (const category in responses) {
       if (responses[category].includes(message)) {
         // If there's a match, randomly select a response from the corresponding category
@@ -104,5 +104,4 @@
 </script>
 
 </body>
-  </html>
-  
+</html>
