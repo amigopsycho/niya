@@ -86,22 +86,4 @@
     chatBox.scrollTop = chatBox.scrollHeight;
   }
 
-  function processUserMessage(message) {
-    let response = "Niya: I'm not sure how to respond to that.";
-    
-    // Check if the user's message matches any predefined questions, jokes, or fallback responses
-    for (const category in responses) {
-      if (responses[category].includes(message)) {
-        // If there's a match, randomly select a response from the corresponding category
-        const randomResponse = responses[category][Math.floor(Math.random() * responses[category].length)];
-        response = `Niya: ${randomResponse}`;
-        break;
-      }
-    }
-
-    appendMessage('Niya', response);
-  }
-</script>
-
-</body>
-</html>
+  function process
